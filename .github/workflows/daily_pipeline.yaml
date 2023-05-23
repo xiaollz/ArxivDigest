@@ -30,7 +30,7 @@ jobs:
       env:
         OPENAI_API_KEY: ${{ secrets.OPAPI }}
         SENDGRID_API_KEY: ${{ secrets.SENDAPI }}
-        FROM_EMAIL: ${{ secrets.EMAIL_MY }}
+        FROM_EMAIL: ${{ secrets.EMAIL_MY2 }}
         TO_EMAIL: ${{ secrets.EMAIL_MY2 }}
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
