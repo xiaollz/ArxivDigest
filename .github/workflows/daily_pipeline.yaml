@@ -28,10 +28,10 @@ jobs:
       run: |
         python src/action.py
       env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
-        FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
-        TO_EMAIL: ${{ secrets.TO_EMAIL }}
+        OPENAI_API_KEY: ${{ secrets.OPAPI }}
+        SENDGRID_API_KEY: ${{ secrets.SENDAPI }}
+        FROM_EMAIL: ${{ secrets.EMAIL_MY }}
+        TO_EMAIL: ${{ secrets.EMAIL_MY2 }}
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
@@ -40,7 +40,7 @@ jobs:
     - name: check
       id: check
       env:
-        SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+        SENDGRID_API_KEY: ${{ secrets.SENDAPI }}
         MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
         MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
         MAIL_CONNECTION: ${{ secrets.MAIL_CONNECTION }}
