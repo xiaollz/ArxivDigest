@@ -34,3 +34,5 @@ threshold: 7
 interest: |
   1. Image inpainting
   2. Video inpainting
+  3. Image editing
+  4. Mural
